@@ -52,6 +52,22 @@ locals {
       ttl             = 1
       proxied         = false # Sadly this breaks Bedrock connections without a paid plan
       allow_overwrite = false
+    },
+      {
+      name            = "radio"
+      value           = var.server_ip
+      type            = "A"
+      ttl             = 1
+      proxied         = true
+      allow_overwrite = false
+    },
+    {
+      name            = "map"
+      value           = var.server_ip
+      type            = "A"
+      ttl             = 1
+      proxied         = true
+      allow_overwrite = false
     }
   ]
 }
