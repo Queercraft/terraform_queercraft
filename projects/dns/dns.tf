@@ -68,6 +68,14 @@ locals {
       ttl             = 1
       proxied         = true
       allow_overwrite = false
+    },
+    {
+      name            = "amp"
+      value           = var.server_ip
+      type            = "A"
+      ttl             = 1
+      proxied         = true
+      allow_overwrite = false
     }
   ]
 }
