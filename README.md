@@ -1,8 +1,8 @@
 # Terraform
 This repository contains [Terraform](https://www.terraform.io/) code used for [Queercraft](https://www.queercraft.net/)'s infrastructure. Currently we only use Terraform to manage our DNS records. We use [Cloudflare](https://www.cloudflare.com/) for DNS.
 
-You might also want to check out the [Terraform](https://www.terraform.io/) repository for the server, which can be found [here](
-https://github.com/Queercraft/terraform_queercraft)
+You might also want to check out the [Ansible](https://www.ansible.com/) repository for the server, which can be found [here](
+https://github.com/Queercraft/ansible_project_queercraft)
 
 ## Contents
 Projects:
