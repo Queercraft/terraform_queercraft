@@ -46,14 +46,6 @@ locals {
       allow_overwrite = false
     },
     {
-      name            = "newsite"
-      value           = var.server_ip
-      type            = "A"
-      ttl             = 1
-      proxied         = true
-      allow_overwrite = false
-    },
-    {
       name            = "mc"
       value           = var.server_ip
       type            = "A"
@@ -84,6 +76,22 @@ locals {
       ttl             = 1
       proxied         = true
       allow_overwrite = false
+    },
+    {
+      name           = var.root_domain
+      value          = var.server_ip
+      type           = "A"
+      ttl            = 1
+      proxied        = true
+      allow_overwrite = true
+    },
+    {
+      name           = "www"
+      value          = var.root_domain
+      type           = "CNAME"
+      ttl            = 1
+      proxied        = true
+      allow_overwrite = true
     }
   ]
 }
